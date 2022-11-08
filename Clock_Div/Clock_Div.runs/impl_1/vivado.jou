@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Nov  4 12:08:04 2022
+# Process ID: 18812
+# Current directory: C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Clock_Div/Clock_Div.runs/impl_1
+# Command line: vivado.exe -log blink_W_ce.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source blink_W_ce.tcl -notrace
+# Log file: C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Clock_Div/Clock_Div.runs/impl_1/blink_W_ce.vdi
+# Journal file: C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Clock_Div/Clock_Div.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source blink_W_ce.tcl -notrace

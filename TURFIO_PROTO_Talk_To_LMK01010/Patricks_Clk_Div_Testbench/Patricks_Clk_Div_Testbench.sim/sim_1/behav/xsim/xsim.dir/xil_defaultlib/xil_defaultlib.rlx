@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.gen/sources_1/ip/ila_0/sim/ila_0.v,1667875626,verilog,,M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v,,ila_0,,,../../../../Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new,,,,,
+M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sim_1/new/TB.v,1667910432,verilog,,,,TB,,,../../../../Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new,,,,,
+M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v,1667875287,verilog,,M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sim_1/new/TB.v,,clk_div_ce,,,../../../../Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new,,,,,
+M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/clogb2.vh,1667579767,verilog,,,,,,,,,,,,
+M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v,1667587545,verilog,,M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/new/clk_div_test.v,M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/clogb2.vh,counter,,,../../../../Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new,,,,,
+M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/new/clk_div_test.v,1667875996,verilog,,,M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/clogb2.vh,clk_div_test,,,../../../../Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new,,,,,

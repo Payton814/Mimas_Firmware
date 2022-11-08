@@ -1,0 +1,359 @@
+
+*** Running vivado
+    with args -log Talk_to.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Talk_to.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Talk_to.tcl -notrace
+Command: synth_design -top Talk_to -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4904
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1133.242 ; gain = 26.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Talk_to' [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:23]
+	Parameter dataW bound to: 32 - type: integer 
+	Parameter Nstates bound to: 33 - type: integer 
+	Parameter Bit0 bound to: 34'b0000000000000000000000000000000000 
+	Parameter Bit1 bound to: 34'b0000000000000000000000000000000001 
+	Parameter Bit2 bound to: 34'b0000000000000000000000000000000010 
+	Parameter Bit3 bound to: 34'b0000000000000000000000000000000011 
+	Parameter Bit4 bound to: 34'b0000000000000000000000000000000100 
+	Parameter Bit5 bound to: 34'b0000000000000000000000000000000101 
+	Parameter Bit6 bound to: 34'b0000000000000000000000000000000110 
+	Parameter Bit7 bound to: 34'b0000000000000000000000000000000111 
+	Parameter Bit8 bound to: 34'b0000000000000000000000000000001000 
+	Parameter Bit9 bound to: 34'b0000000000000000000000000000001001 
+	Parameter Bit10 bound to: 34'b0000000000000000000000000000001010 
+	Parameter Bit11 bound to: 34'b0000000000000000000000000000001011 
+	Parameter Bit12 bound to: 34'b0000000000000000000000000000001100 
+	Parameter Bit13 bound to: 34'b0000000000000000000000000000001101 
+	Parameter Bit14 bound to: 34'b0000000000000000000000000000001110 
+	Parameter Bit15 bound to: 34'b0000000000000000000000000000001111 
+	Parameter Bit16 bound to: 34'b0000000000000000000000000000010000 
+	Parameter Bit17 bound to: 34'b0000000000000000000000000000010001 
+	Parameter Bit18 bound to: 34'b0000000000000000000000000000010010 
+	Parameter Bit19 bound to: 34'b0000000000000000000000000000010011 
+	Parameter Bit20 bound to: 34'b0000000000000000000000000000010100 
+	Parameter Bit21 bound to: 34'b0000000000000000000000000000010101 
+	Parameter Bit22 bound to: 34'b0000000000000000000000000000010110 
+	Parameter Bit23 bound to: 34'b0000000000000000000000000000010111 
+	Parameter Bit24 bound to: 34'b0000000000000000000000000000011000 
+	Parameter Bit25 bound to: 34'b0000000000000000000000000000011001 
+	Parameter Bit26 bound to: 34'b0000000000000000000000000000011010 
+	Parameter Bit27 bound to: 34'b0000000000000000000000000000011011 
+	Parameter Bit28 bound to: 34'b0000000000000000000000000000011100 
+	Parameter Bit29 bound to: 34'b0000000000000000000000000000011101 
+	Parameter Bit30 bound to: 34'b0000000000000000000000000000011110 
+	Parameter Bit31 bound to: 34'b0000000000000000000000000000011111 
+	Parameter BitLE bound to: 34'b0000000000000000000000000000100000 
+	Parameter Idle bound to: 34'b0000000000000000000000000000100001 
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Divider_20MHz/Clock_Divider_20MHz.srcs/sources_1/new/CLK_DIV_20MHz.v:23]
+	Parameter P bound to: 0 - type: integer 
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Divider_20MHz/Clock_Divider_20MHz.srcs/sources_1/new/CLK_DIV_20MHz.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (1#1) [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Divider_20MHz/Clock_Divider_20MHz.srcs/sources_1/new/CLK_DIV_20MHz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div_ce' [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v:24]
+	Parameter CLK_DIVIDE bound to: 5'b00100 
+	Parameter EXTRA_DIV2 bound to: FALSE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Users/Payton/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78184]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (2#1) [C:/Users/Payton/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78184]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u_srl' [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v:32]
+WARNING: [Synth 8-7071] port 'CE' of module 'SRLC32E' is unconnected for instance 'u_srl' [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v:32]
+WARNING: [Synth 8-7023] instance 'u_srl' of module 'SRLC32E' has 6 connections declared, but only 4 given [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div_ce' (3#1) [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v:24]
+INFO: [Synth 8-6157] synthesizing module 'counter' [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v:23]
+	Parameter FREQ bound to: 20000000 - type: integer 
+	Parameter C_BITS bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v:23]
+	Parameter FREQ bound to: 125000000 - type: integer 
+	Parameter C_BITS bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (4#1) [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:95]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [M:/LMK_010101/LMK_010101.runs/synth_1/.Xil/Vivado-30588-DESKTOP-0RQFACS/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (5#1) [M:/LMK_010101/LMK_010101.runs/synth_1/.Xil/Vivado-30588-DESKTOP-0RQFACS/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [M:/LMK_010101/LMK_010101.runs/synth_1/.Xil/Vivado-30588-DESKTOP-0RQFACS/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (6#1) [M:/LMK_010101/LMK_010101.runs/synth_1/.Xil/Vivado-30588-DESKTOP-0RQFACS/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'data_upload'. This will prevent further optimization [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:106]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'debugger'. This will prevent further optimization [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:95]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ClockDiv'. This will prevent further optimization [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:86]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter2'. This will prevent further optimization [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:91]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clk_div_ce'. This will prevent further optimization [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'Talk_to' (7#1) [M:/LMK_010101/LMK_010101.srcs/sources_1/new/Talk_to.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1191.609 ; gain = 84.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1191.609 ; gain = 84.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1191.609 ; gain = 84.812
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1191.609 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [m:/LMK_010101/LMK_010101.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'debugger'
+Finished Parsing XDC File [m:/LMK_010101/LMK_010101.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'debugger'
+Parsing XDC File [m:/LMK_010101/LMK_010101.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'data_upload'
+Finished Parsing XDC File [m:/LMK_010101/LMK_010101.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'data_upload'
+Parsing XDC File [M:/LMK_010101/LMK_010101.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc]
+Finished Parsing XDC File [M:/LMK_010101/LMK_010101.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [M:/LMK_010101/LMK_010101.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Talk_to_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Talk_to_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1268.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1268.504 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1268.504 ; gain = 161.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1268.504 ; gain = 161.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for debugger. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for data_upload. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1268.504 ; gain = 161.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Talk_to'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                           000000 | 0000000000000000000000000000100001
+                    Bit0 |                           000001 | 0000000000000000000000000000000000
+                    Bit1 |                           000010 | 0000000000000000000000000000000001
+                    Bit2 |                           000011 | 0000000000000000000000000000000010
+                    Bit3 |                           000100 | 0000000000000000000000000000000011
+                    Bit4 |                           000101 | 0000000000000000000000000000000100
+                    Bit5 |                           000110 | 0000000000000000000000000000000101
+                    Bit6 |                           000111 | 0000000000000000000000000000000110
+                    Bit7 |                           001000 | 0000000000000000000000000000000111
+                    Bit8 |                           001001 | 0000000000000000000000000000001000
+                    Bit9 |                           001010 | 0000000000000000000000000000001001
+                   Bit10 |                           001011 | 0000000000000000000000000000001010
+                   Bit11 |                           001100 | 0000000000000000000000000000001011
+                   Bit12 |                           001101 | 0000000000000000000000000000001100
+                   Bit13 |                           001110 | 0000000000000000000000000000001101
+                   Bit14 |                           001111 | 0000000000000000000000000000001110
+                   Bit15 |                           010000 | 0000000000000000000000000000001111
+                   Bit16 |                           010001 | 0000000000000000000000000000010000
+                   Bit17 |                           010010 | 0000000000000000000000000000010001
+                   Bit18 |                           010011 | 0000000000000000000000000000010010
+                   Bit19 |                           010100 | 0000000000000000000000000000010011
+                   Bit20 |                           010101 | 0000000000000000000000000000010100
+                   Bit21 |                           010110 | 0000000000000000000000000000010101
+                   Bit22 |                           010111 | 0000000000000000000000000000010110
+                   Bit23 |                           011000 | 0000000000000000000000000000010111
+                   Bit24 |                           011001 | 0000000000000000000000000000011000
+                   Bit25 |                           011010 | 0000000000000000000000000000011001
+                   Bit26 |                           011011 | 0000000000000000000000000000011010
+                   Bit27 |                           011100 | 0000000000000000000000000000011011
+                   Bit28 |                           011101 | 0000000000000000000000000000011100
+                   Bit29 |                           011110 | 0000000000000000000000000000011101
+                   Bit30 |                           011111 | 0000000000000000000000000000011110
+                   Bit31 |                           100000 | 0000000000000000000000000000011111
+                   BitLE |                           100001 | 0000000000000000000000000000100000
+                  iSTATE |                           100010 | 1111111111111111111111111111111111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Talk_to'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1268.504 ; gain = 161.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input   27 Bit        Muxes := 1     
+	  35 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+	  35 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1268.504 ; gain = 161.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1282.625 ; gain = 175.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1303.527 ; gain = 196.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1304.891 ; gain = 198.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [M:/LMK_010101/LMK_010101.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v:33]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.625 ; gain = 203.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1310.625 ; gain = 203.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1310.625 ; gain = 203.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1310.625 ; gain = 203.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1310.625 ; gain = 203.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1310.625 ; gain = 203.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
+|2     |vio_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila     |     1|
+|2     |vio     |     1|
+|3     |BUFG    |     2|
+|4     |CARRY4  |    13|
+|5     |LUT1    |     4|
+|6     |LUT2    |     4|
+|7     |LUT3    |     9|
+|8     |LUT4    |    12|
+|9     |LUT5    |    22|
+|10    |LUT6    |    20|
+|11    |MUXF7   |     4|
+|12    |MUXF8   |     2|
+|13    |SRLC32E |     1|
+|14    |FDRE    |    74|
+|15    |FD      |     3|
+|16    |IBUF    |     2|
+|17    |OBUF    |     6|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1310.625 ; gain = 203.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1310.625 ; gain = 126.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1310.625 ; gain = 203.828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1318.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1321.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FD_1 => FDRE (inverted pins: C): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1321.727 ; gain = 214.930
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'M:/LMK_010101/LMK_010101.runs/synth_1/Talk_to.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Talk_to_utilization_synth.rpt -pb Talk_to_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  7 10:21:35 2022...

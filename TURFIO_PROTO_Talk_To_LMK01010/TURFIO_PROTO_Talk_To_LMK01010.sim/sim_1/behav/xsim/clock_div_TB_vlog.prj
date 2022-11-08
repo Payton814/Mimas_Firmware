@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new" \
+"../../../../TURFIO_PROTO_Talk_To_LMK01010.gen/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new/counter.v" \
+"../../../../TURFIO_PROTO_Talk_To_LMK01010.srcs/sim_1/new/sim1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

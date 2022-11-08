@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/TURFIO_PROTO_Talk_To_LMK01010/TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new/clogb2.vh,1663260646,verilog,,,,,,,,,,,,
+M:/TURFIO_PROTO_Talk_To_LMK01010.gen/sources_1/ip/ila_0/sim/ila_0.v,1666622245,verilog,,M:/TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new/counter.v,,ila_0,,,../../../../TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new,,,,,
+M:/TURFIO_PROTO_Talk_To_LMK01010.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+M:/TURFIO_PROTO_Talk_To_LMK01010.srcs/sim_1/new/sim1.v,1666626273,verilog,,,,clock_div_TB,,,../../../../TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new,,,,,
+M:/TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new/clogb2.vh,1663260646,verilog,,,,,,,,,,,,
+M:/TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new/counter.v,1666706672,verilog,,M:/TURFIO_PROTO_Talk_To_LMK01010.srcs/sim_1/new/sim1.v,M:/TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new/clogb2.vh,ClockDiv;Talk_to;counter,,,../../../../TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new,,,,,

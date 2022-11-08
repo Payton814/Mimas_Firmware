@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new" \
+"../../../../Patricks_Clk_Div_Testbench.srcs/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v" \
+"../../../../Patricks_Clk_Div_Testbench.srcs/sim_1/new/TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

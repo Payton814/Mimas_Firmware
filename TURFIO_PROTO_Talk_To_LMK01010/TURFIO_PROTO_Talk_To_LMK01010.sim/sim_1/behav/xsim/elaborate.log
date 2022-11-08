@@ -1,0 +1,18 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/Payton/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 01163c5fafff4e8d8798a0ffe3f1821d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot clock_div_TB_behav xil_defaultlib.clock_div_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'probe0' [M:/TURFIO_PROTO_Talk_To_LMK01010.srcs/sources_1/new/counter.v:75]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockDiv
+Compiling module xil_defaultlib.counter(FREQ=20000000)
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.Talk_to
+Compiling module xil_defaultlib.clock_div_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_div_TB_behav

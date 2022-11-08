@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.srcs/sim_1/new/blinky_TB.v,1667582677,verilog,,,,blinky_TB,,,../../../../MiMas_Blinker.srcs/sources_1/imports/new,,,,,
+C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.srcs/sources_1/imports/new/clogb2.vh,1667579767,verilog,,,,,,,,,,,,
+C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.srcs/sources_1/imports/new/counter.v,1667580020,verilog,,C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.srcs/sim_1/new/blinky_TB.v,C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.srcs/sources_1/imports/new/clogb2.vh,counter,,,../../../../MiMas_Blinker.srcs/sources_1/imports/new,,,,,
+C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.srcs/sources_1/new/Blinky.v,1667580970,verilog,,C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/MiMas_Blinker/MiMas_Blinker.srcs/sources_1/imports/new/counter.v,,Blinky,,,../../../../MiMas_Blinker.srcs/sources_1/imports/new,,,,,

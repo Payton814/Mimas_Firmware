@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sim_1/new/TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB
+INFO: [VRFC 10-2458] undeclared symbol ce20MHz, assumed default net type wire [M:/Patricks_Clk_Div_Testbench/Patricks_Clk_Div_Testbench.srcs/sim_1/new/TB.v:26]

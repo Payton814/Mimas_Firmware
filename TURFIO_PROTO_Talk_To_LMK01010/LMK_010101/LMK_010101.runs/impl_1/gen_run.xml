@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1667834438">
+  <File Type="BITSTR-BMM" Name="Talk_to_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Talk_to_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Talk_to_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Talk_to_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Talk_to.tcl"/>
+  <File Type="OPT-TIMING" Name="Talk_to_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Talk_to_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Talk_to_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Talk_to_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Talk_to_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Talk_to.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Talk_to_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Talk_to_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Talk_to_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Talk_to_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Talk_to_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Talk_to_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Talk_to_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Talk_to_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Talk_to_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Talk_to_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Talk_to_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Talk_to_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Talk_to_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Talk_to.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Talk_to_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Talk_to_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Talk_to_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Talk_to.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Talk_to_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Talk_to_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Talk_to_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Talk_to_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Talk_to_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Talk_to_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Talk_to_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Talk_to.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Talk_to_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Talk_to_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Talk_to_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Talk_to_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Talk_to_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Talk_to_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Talk_to_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Talk_to_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Talk_to_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Talk_to_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Talk_to_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Talk_to_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Talk_to_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Talk_to_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Talk_to_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Talk_to_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Talk_to_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Talk_to_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Talk_to_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Talk_to_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Talk_to_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Talk_to.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Talk_to_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Talk_to.rbt"/>
+  <File Type="BITSTR-NKY" Name="Talk_to.nky"/>
+  <File Type="PDI-FILE" Name="Talk_to.pdi"/>
+  <File Type="RCFI_FILE" Name="Talk_to.rcfi"/>
+  <File Type="CFI_FILE" Name="Talk_to.cfi"/>
+  <File Type="RNPI_FILE" Name="Talk_to.rnpi"/>
+  <File Type="NPI_FILE" Name="Talk_to.npi"/>
+  <File Type="RBD_FILE" Name="Talk_to.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Talk_to.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Talk_to.sysdef"/>
+  <File Type="BG-BGN" Name="Talk_to.bgn"/>
+  <File Type="BG-DRC" Name="Talk_to.drc"/>
+  <File Type="RDI-RDI" Name="Talk_to.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Artix_7_MiMas_A7/Clock_Divider_20MHz/Clock_Divider_20MHz.srcs/sources_1/new/CLK_DIV_20MHz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Clock_Divider_20MHz/Clock_Divider_20MHz.srcs/sources_1/new/CLK_DIV_20MHz.v"/>
+        <Attr Name="ImportTime" Val="1667586988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v"/>
+        <Attr Name="ImportTime" Val="1667578275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/clogb2.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/clogb2.vh"/>
+        <Attr Name="ImportTime" Val="1667579767"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/counter/counter.srcs/sources_1/new/counter.v"/>
+        <Attr Name="ImportTime" Val="1667587545"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Talk_to.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Talk_to"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/MiMas/Mimasa7Mini.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Firmware_W_LMK010101/TURFIO_PROTO_Talk_To_LMK01010.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc"/>
+        <Attr Name="ImportTime" Val="1667404236"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_0"/>
+</GenRun>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov  7 10:21:43 2022
+# Process ID: 4856
+# Current directory: M:/LMK_010101/LMK_010101.runs/impl_1
+# Command line: vivado.exe -log Talk_to.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Talk_to.tcl -notrace
+# Log file: M:/LMK_010101/LMK_010101.runs/impl_1/Talk_to.vdi
+# Journal file: M:/LMK_010101/LMK_010101.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Talk_to.tcl -notrace

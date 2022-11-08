@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 25 11:51:21 2022
+# Process ID: 21964
+# Current directory: M:/TURFIO_PROTO_Talk_To_LMK01010.runs/synth_1
+# Command line: vivado.exe -log Talk_to.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Talk_to.tcl
+# Log file: M:/TURFIO_PROTO_Talk_To_LMK01010.runs/synth_1/Talk_to.vds
+# Journal file: M:/TURFIO_PROTO_Talk_To_LMK01010.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Talk_to.tcl -notrace

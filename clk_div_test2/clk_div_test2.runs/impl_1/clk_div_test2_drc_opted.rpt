@@ -1,0 +1,47 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Nov  8 14:12:57 2022
+| Host         : DESKTOP-0RQFACS running 64-bit major release  (build 9200)
+| Command      : report_drc -file clk_div_test2_drc_opted.rpt -pb clk_div_test2_drc_opted.pb -rpx clk_div_test2_drc_opted.rpx
+| Design       : clk_div_test2
+| Device       : xc7a35tftg256-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT clk_div_ce/ce_INST_0 is driving clock pin of 25 cells. This could lead to large hold time violations. Involved cells are:
+counter/count_reg[0], counter/count_reg[10], counter/count_reg[11],
+counter/count_reg[12], counter/count_reg[13], counter/count_reg[14],
+counter/count_reg[15], counter/count_reg[16], counter/count_reg[17],
+counter/count_reg[18], counter/count_reg[19], counter/count_reg[1],
+counter/count_reg[20], counter/count_reg[21], counter/count_reg[22]
+ (the first 15 of 25 listed)
+Related violations: <none>
+
+
