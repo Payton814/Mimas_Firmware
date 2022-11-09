@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Wed Nov  9 09:16:21 2022
+| Date             : Wed Nov  9 10:17:49 2022
 | Host             : DESKTOP-0RQFACS running 64-bit major release  (build 9200)
 | Command          : report_power -file Blink_Maybe_power_routed.rpt -pb Blink_Maybe_power_summary_routed.pb -rpx Blink_Maybe_power_routed.rpx
 | Design           : Blink_Maybe
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.081        |
+| Total On-Chip Power (W)  | 0.085        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.012        |
-| Device Static (W)        | 0.068        |
+| Dynamic (W)              | 0.013        |
+| Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 84.6         |
 | Junction Temperature (C) | 25.4         |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.009 |        4 |       --- |             --- |
+| Clocks                   |     0.010 |        4 |       --- |             --- |
 | Slice Logic              |    <0.001 |     4437 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1244 |     20800 |            5.98 |
+|   LUT as Logic           |    <0.001 |     1243 |     20800 |            5.98 |
 |   Register               |    <0.001 |     2285 |     41600 |            5.49 |
 |   CARRY4                 |    <0.001 |       54 |      8150 |            0.66 |
 |   LUT as Shift Register  |    <0.001 |      141 |      9600 |            1.47 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      9600 |            0.25 |
 |   F7/F8 Muxes            |    <0.001 |       48 |     32600 |            0.15 |
-|   Others                 |     0.000 |      287 |       --- |             --- |
-| Signals                  |     0.001 |     3146 |       --- |             --- |
+|   Others                 |     0.000 |      286 |       --- |             --- |
+| Signals                  |     0.001 |     3154 |       --- |             --- |
 | Block RAM                |    <0.001 |        1 |        50 |            2.00 |
 | I/O                      |    <0.001 |        4 |       170 |            2.35 |
-| Static Power             |     0.068 |          |           |                 |
-| Total                    |     0.081 |          |           |                 |
+| Static Power             |     0.072 |          |           |                 |
+| Total                    |     0.085 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.012 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.022 |       0.013 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -145,7 +145,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| Blink_Maybe              |     0.012 |
+| Blink_Maybe              |     0.013 |
 |   dbg_hub                |     0.003 |
 |     inst                 |     0.003 |
 |       BSCANID.u_xsdbm_id |     0.003 |
