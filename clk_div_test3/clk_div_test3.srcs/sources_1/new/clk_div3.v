@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// This module SUCCESSFULLY impliments Patricks clock divider, creating a clock enable
+// Then we use that clock enable to count, it only counts to 20 but it fucking counts
 
 module clk_div3(input clk, output [2:0] LED);
 

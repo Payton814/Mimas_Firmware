@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov  8 19:45:10 2022
+# Process ID: 26956
+# Current directory: Q:/Blink_With_Patricks_CE/Blink_With_Patricks_CE.runs/impl_1
+# Command line: vivado.exe -log This_Better_Work.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source This_Better_Work.tcl -notrace
+# Log file: Q:/Blink_With_Patricks_CE/Blink_With_Patricks_CE.runs/impl_1/This_Better_Work.vdi
+# Journal file: Q:/Blink_With_Patricks_CE/Blink_With_Patricks_CE.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source This_Better_Work.tcl -notrace

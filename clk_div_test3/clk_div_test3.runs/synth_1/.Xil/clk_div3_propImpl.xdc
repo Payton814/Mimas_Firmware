@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/clk_div_test3/clk_div_test3.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc rfile:../../../clk_div_test3.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Mimas_Firmware/clk_div_test3/clk_div_test3.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc rfile:../../../clk_div_test3.srcs/constrs_1/imports/MiMas/Mimasa7Mini.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN "N11"    IOSTANDARD LVCMOS33       SLEW FAST} [get_ports { clk }]     ;                # IO_L13P_T2_MRCC_14            Sch = CLK
 set_property src_info {type:XDC file:1 line:104 export:INPUT save:INPUT read:READ} [current_design]
