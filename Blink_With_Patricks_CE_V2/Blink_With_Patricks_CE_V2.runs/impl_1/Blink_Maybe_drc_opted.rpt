@@ -1,0 +1,47 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Nov  9 09:15:33 2022
+| Host         : DESKTOP-0RQFACS running 64-bit major release  (build 9200)
+| Command      : report_drc -file Blink_Maybe_drc_opted.rpt -pb Blink_Maybe_drc_opted.pb -rpx Blink_Maybe_drc_opted.rpx
+| Design       : Blink_Maybe
+| Device       : xc7a35tftg256-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+------------------------------------------------+------------+
+| Rule      | Severity | Description                                    | Violations |
++-----------+----------+------------------------------------------------+------------+
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 1          |
+| REQP-1617 | Warning  | use_IOB_register                               | 1          |
++-----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLIO-6#1 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register blink_reg. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+REQP-1617#1 Warning
+use_IOB_register  
+The FDRE cell blink_reg has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+
