@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date                      : Tue Nov  8 19:46:16 2022
+| Date                      : Thu Nov 10 12:05:32 2022
 | Host                      : DESKTOP-0RQFACS running 64-bit major release  (build 9200)
 | Command                   : report_io -file This_Better_Work_io_placed.rpt
 | Design                    : This_Better_Work
@@ -190,7 +190,7 @@ Table of Contents
 | K9         |             |            | VCCINT                       | VCCINT      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K10        |             | Dedicated  | INIT_B_0                     | Config      |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K11        |             |            | VCCAUX                       | VCCAUX      |             |         |            |      |                     |                      |    1.80 |            |           |          |      |                  |              |                   |              |
-| K12        | LED[0]      | High Range | IO_0_14                      | TRISTATE    | LVCMOS33    |      14 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| K12        | LED[0]      | High Range | IO_0_14                      | OUTPUT      | LVCMOS33    |      14 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | K13        | LED[1]      | High Range | IO_L5P_T0_D06_14             | TRISTATE    | LVCMOS33    |      14 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | K14        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | K15        |             | High Range | IO_L2P_T0_D02_14             | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

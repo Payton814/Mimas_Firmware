@@ -92,6 +92,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog Q:/Blink_With_Patricks_CE_V2/Blink_With_Patricks_CE_V2.srcs/sources_1/imports/counter/counter.srcs/sources_1/new/clogb2.vh
 read_verilog -library xil_defaultlib {
+  Q:/Blink_With_Patricks_CE_V2/Blink_With_Patricks_CE_V2.srcs/sources_1/imports/new/CLK_DIV_20MHz.v
   Q:/Blink_With_Patricks_CE_V2/Blink_With_Patricks_CE_V2.srcs/sources_1/imports/Clock_Div/Clock_Div.srcs/sources_1/imports/hdl/clk_div_ce.v
   Q:/Blink_With_Patricks_CE_V2/Blink_With_Patricks_CE_V2.srcs/sources_1/new/Blink_Maybe.v
 }

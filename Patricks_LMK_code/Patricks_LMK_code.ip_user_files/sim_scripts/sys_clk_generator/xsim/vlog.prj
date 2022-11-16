@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../ipstatic" \
+"../../../../Patricks_LMK_code.gen/sources_1/ip/sys_clk_generator/sys_clk_generator_clk_wiz.v" \
+"../../../../Patricks_LMK_code.gen/sources_1/ip/sys_clk_generator/sys_clk_generator.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

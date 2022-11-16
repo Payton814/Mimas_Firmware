@@ -1,0 +1,2 @@
+lmk_ila.v,verilog,xil_defaultlib,../../../../Patricks_LMK_code.gen/sources_1/ip/lmk_ila/sim/lmk_ila.v,incdir="../../../../Patricks_LMK_code.gen/sources_1/ip/lmk_ila/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

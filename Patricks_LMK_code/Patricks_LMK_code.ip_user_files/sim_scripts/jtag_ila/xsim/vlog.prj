@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../Patricks_LMK_code.gen/sources_1/ip/jtag_ila/hdl/verilog" \
+"../../../../Patricks_LMK_code.gen/sources_1/ip/jtag_ila/sim/jtag_ila.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

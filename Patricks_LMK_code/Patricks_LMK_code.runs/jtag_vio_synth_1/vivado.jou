@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 14 10:00:06 2022
+# Process ID: 21584
+# Current directory: Q:/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.runs/jtag_vio_synth_1
+# Command line: vivado.exe -log jtag_vio.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source jtag_vio.tcl
+# Log file: Q:/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.runs/jtag_vio_synth_1/jtag_vio.vds
+# Journal file: Q:/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.runs/jtag_vio_synth_1\vivado.jou
+#-----------------------------------------------------------
+source jtag_vio.tcl -notrace

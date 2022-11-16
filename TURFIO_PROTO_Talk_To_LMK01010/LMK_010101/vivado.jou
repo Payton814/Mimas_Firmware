@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 14 10:28:46 2022
+# Process ID: 5460
+# Current directory: C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Mimas_Firmware/TURFIO_PROTO_Talk_To_LMK01010/LMK_010101
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16572 C:\Users\Payton\Vivado_Projects\Artix_7_MiMas_A7\Mimas_Firmware\TURFIO_PROTO_Talk_To_LMK01010\LMK_010101\LMK_010101.xpr
+# Log file: C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Mimas_Firmware/TURFIO_PROTO_Talk_To_LMK01010/LMK_010101/vivado.log
+# Journal file: C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Mimas_Firmware/TURFIO_PROTO_Talk_To_LMK01010/LMK_010101\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Mimas_Firmware/TURFIO_PROTO_Talk_To_LMK01010/LMK_010101/LMK_010101.xpr
+update_compile_order -fileset sources_1

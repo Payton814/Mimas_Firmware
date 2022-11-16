@@ -51,6 +51,6 @@ always @(posedge clk) begin
 
 end
 
-//assign LED[0] = blink;
+assign LED[0] = blink;
 
 endmodule

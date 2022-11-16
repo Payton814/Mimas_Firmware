@@ -1,0 +1,2 @@
+jtag_vio.v,verilog,xil_defaultlib,../../../../Patricks_LMK_code.gen/sources_1/ip/jtag_vio/sim/jtag_vio.v,incdir="../../../../Patricks_LMK_code.gen/sources_1/ip/jtag_vio/hdl/verilog"incdir="../../../../Patricks_LMK_code.gen/sources_1/ip/jtag_vio/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

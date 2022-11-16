@@ -21,7 +21,7 @@
 // 1 after a bit of startup.
 
 `define DLYFF #1
-module clk_div_ce #(parameter [4:0] CLK_DIVIDE=1.5,
+module clk_div_ce #(parameter [4:0] CLK_DIVIDE=2,
 		    parameter EXTRA_DIV2="FALSE")
                    ( input clk,
 		     output ce );
@@ -29,7 +29,8 @@ module clk_div_ce #(parameter [4:0] CLK_DIVIDE=1.5,
    reg 			    q_rereg = 0;
    wire 		    q;
    wire 		    d_in = !q;   
-   SRLC32E #(.INIT(32'h0))  u_srl(.D(d_in),.Q(q),.A(CLK_DIVIDE),.CLK(clk));
+   // Needed to add the .CE(1'b1) in the SRLC32E instantiation or else this does not work when assigning the ce logic
+   SRLC32E #(.INIT(32'h0))  u_srl(.D(d_in),.Q(q),.CE(1'b1),.A(CLK_DIVIDE),.CLK(clk));
    always @(posedge clk) q_rereg <= `DLYFF q;
 
    assign ce = (EXTRA_DIV2 == "TRUE") ? (q && !q_rereg) : q ^ q_rereg;
