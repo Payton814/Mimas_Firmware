@@ -101,8 +101,8 @@ create_clock -add -name sys_clk_pin -period 10.0 [get_ports { clk }];
 #####################################################################################################################
 ##                                               LEDs                                                               #
 #####################################################################################################################
-#set_property -dict { PACKAGE_PIN "K12"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[0] }];                      # IO_0_14                       Sch = LED0
-#set_property -dict { PACKAGE_PIN "K13"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[1] }];                      # IO_L5P_T0_D06_14              Sch = LED1
+set_property -dict { PACKAGE_PIN "K12"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[0] }];                      # IO_0_14                       Sch = LED0
+set_property -dict { PACKAGE_PIN "R11"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[1] }];                      # IO_L5P_T0_D06_14              Sch = LED1
 #set_property -dict { PACKAGE_PIN "R10"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[2] }];                      # IO_L17P_T2_A14_D30_14         Sch = LED2
 #set_property -dict { PACKAGE_PIN "R13"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[3] }];                      # IO_L16P_T2_CSI_14             Sch = LED3
 #set_property -dict { PACKAGE_PIN "T13"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[4] }];                      # IO_L16N_T2_A15_D31_14         Sch = LED4
@@ -175,8 +175,8 @@ set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "D10" } [get_ports {    CLK
 #set_property -dict  { PACKAGE_PIN "D14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[1]}];                        # IO_L15P_T2_DQS_15             Sch = GPIO_19_P
 #set_property -dict  { PACKAGE_PIN "B14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[2]}];                        # IO_L8N_T1_AD10N_15            Sch = GPIO_20_N
 #set_property -dict  { PACKAGE_PIN "C14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[3]}];                        # IO_L8P_T1_AD10P_15            Sch = GPIO_20_P
-#set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[4]}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
-#set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[5]}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P
+set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_N}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
+set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_P}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P
 #set_property -dict  { PACKAGE_PIN "C12"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[6]}];                        # IO_L11N_T1_SRCC_15            Sch = GPIO_22_N
 #set_property -dict  { PACKAGE_PIN "C11"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[7]}];                        # IO_L11P_T1_SRCC_15            Sch = GPIO_22_P
 #set_property -dict  { PACKAGE_PIN "G16"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[8]}];                        # IO_L22N_T3_A16_15             Sch = GPIO_23_N

@@ -1,7 +1,7 @@
--- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Mon Nov 14 10:01:34 2022
+-- Tool Version: Vivado v.2020.2.2 (win64) Build 3118627 Tue Feb  9 05:14:06 MST 2021
+-- Date        : Mon Nov 21 09:39:54 2022
 -- Host        : DESKTOP-0RQFACS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               q:/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.gen/sources_1/ip/lmk_vio/lmk_vio_stub.vhdl
@@ -29,6 +29,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "clk,probe_in0[0:0],probe_out0[0:0],probe_out1[31:0],probe_out2[0:0]";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "vio,Vivado 2020.2";
+attribute X_CORE_INFO of stub : architecture is "vio,Vivado 2020.2.2";
 begin
 end;

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2.2 (win64) Build 3118627 Tue Feb  9 05:14:06 MST 2021
-| Date         : Wed Nov 16 15:13:43 2022
+| Date         : Thu Dec  1 14:31:53 2022
 | Host         : DESKTOP-0RQFACS running 64-bit major release  (build 9200)
 | Command      : report_utilization -file lmk_shift_reg_utilization_synth.rpt -pb lmk_shift_reg_utilization_synth.pb
 | Design       : lmk_shift_reg
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |   44 |     0 |     20800 |  0.21 |
-|   LUT as Logic             |   43 |     0 |     20800 |  0.21 |
+| Slice LUTs*                |   63 |     0 |     20800 |  0.30 |
+|   LUT as Logic             |   62 |     0 |     20800 |  0.30 |
 |   LUT as Memory            |    1 |     0 |      9600 |  0.01 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |    1 |     0 |           |       |
-| Slice Registers            |   50 |     3 |     41600 |  0.12 |
-|   Register as Flip Flop    |   50 |     3 |     41600 |  0.12 |
+| Slice Registers            |  105 |     3 |     41600 |  0.25 |
+|   Register as Flip Flop    |  105 |     3 |     41600 |  0.25 |
 |   Register as Latch        |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                   |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                   |    0 |     0 |      8150 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 2     |          Yes |         Set |            - |
-| 48    |          Yes |       Reset |            - |
+| 103   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -92,7 +92,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    4 |     0 |       170 |  2.35 |
+| Bonded IOB                  |    8 |     0 |       170 |  4.71 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         5 |  0.00 |
@@ -148,17 +148,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   48 |        Flop & Latch |
-| LUT3     |   34 |                 LUT |
-| OBUF     |    3 |                  IO |
-| LUT5     |    3 |                 LUT |
-| LUT4     |    3 |                 LUT |
+| FDRE     |  103 |        Flop & Latch |
+| LUT4     |   42 |                 LUT |
+| CARRY4   |   14 |          CarryLogic |
+| LUT5     |    8 |                 LUT |
+| LUT6     |    6 |                 LUT |
+| OBUF     |    5 |                  IO |
+| LUT3     |    5 |                 LUT |
+| LUT2     |    4 |                 LUT |
 | LUT1     |    3 |                 LUT |
-| LUT6     |    2 |                 LUT |
-| LUT2     |    2 |                 LUT |
+| IBUF     |    3 |                  IO |
 | FDSE     |    2 |        Flop & Latch |
 | SRLC32E  |    1 |  Distributed Memory |
-| IBUF     |    1 |                  IO |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
@@ -170,6 +171,7 @@ Table of Contents
 | Ref Name | Used |
 +----------+------+
 | lmk_vio  |    1 |
+| lmk_ila  |    1 |
 +----------+------+
 
 
