@@ -6,16 +6,16 @@ set_property -dict { PACKAGE_PIN "K12"   IOSTANDARD LVCMOS33    SLEW FAST} [get_
 set_property src_info {type:XDC file:1 line:105 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN "R11"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[1] }];                      # IO_L5P_T0_D06_14              Sch = LED1
 set_property src_info {type:XDC file:1 line:168 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "C16" } [get_ports {    LMKDATA     }]
+set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A8" } [get_ports {    LMKDATA     }]
 set_property src_info {type:XDC file:1 line:169 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "B16" } [get_ports {    LMKLE       }]
+set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A9" } [get_ports {    LMKLE       }]
 set_property src_info {type:XDC file:1 line:170 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A15" } [get_ports {    LMKCLK      }]
-set_property src_info {type:XDC file:1 line:171 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "K15" } [get_ports {    LMKOE       }]
+set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "L5" } [get_ports {    LMKCLK      }]
 set_property src_info {type:XDC file:1 line:172 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "D10" } [get_ports {    CLK_SYNC    }]
+set_property src_info {type:XDC file:1 line:174 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict  { PACKAGE_PIN "D15"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {CLK_PIN}];                        # IO_L15N_T2_DQS_ADV_B_15       Sch = GPIO_19_N
 set_property src_info {type:XDC file:1 line:178 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_N}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
+set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_P}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
 set_property src_info {type:XDC file:1 line:179 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_P}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P
+set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_N}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P

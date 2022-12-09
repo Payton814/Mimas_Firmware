@@ -59,7 +59,8 @@ lmk_vio your_instance_name (
   .probe_in0(probe_in0),    // input wire [0 : 0] probe_in0
   .probe_out0(probe_out0),  // output wire [0 : 0] probe_out0
   .probe_out1(probe_out1),  // output wire [31 : 0] probe_out1
-  .probe_out2(probe_out2)  // output wire [0 : 0] probe_out2
+  .probe_out2(probe_out2),  // output wire [0 : 0] probe_out2
+  .probe_out3(probe_out3)  // output wire [0 : 0] probe_out3
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -35,22 +35,27 @@ module lmk_shift_reg( input clk,
         output LMKDATA,
         output LMKCLK,
         output LMKLE,
-        output [1:0] LED
+        output CLK_SYNC,
+        output [1:0] LED,
+        output CLK_PIN
+        //output [3:0] CONN1
 
     );
     
     // At reset, we automatically load this into the LMK so that it restores our input
     // clock in case software blows some crap up or something.
     parameter [31:0] RESET_DEFAULT = 32'h80000000;
-    localparam led_freq = 20000000;
+    localparam led_freq = 60000000;
     reg [25:0] led_count = 0;
     reg [25:0] led_count2 = 0;
     wire ce20MHz;
     reg led = 0;
     reg go = 0;
+    reg dumbclk = 0;
     wire [31:0] din;
     reg lmkled = 0;
-    clk_div_ce #(.CLK_DIVIDE(4)) clk_div_ce(.clk(clk),.ce(ce20MHz));
+    reg lmkled_P = 0;
+    clk_div_ce #(.CLK_DIVIDE(4), .EXTRA_DIV2("FALSE")) clk_div_ce(.clk(clk),.ce(ce20MHz));
     reg load2 = 0;
 
     
@@ -85,14 +90,17 @@ module lmk_shift_reg( input clk,
     localparam [FSM_BITS-1:0] LATCH_HIGH = 4;
     localparam [FSM_BITS-1:0] RESET = 5;
     reg [FSM_BITS-1:0] state = IDLE;
+    reg latch_count = 0;
     
     lmk_vio vio(.clk(clk), .probe_in0(busy), .probe_out0(rst), .probe_out1(din),
-         .probe_out2(load));
+         .probe_out2(load), .probe_out3(sync_vio));
          
     lmk_ila ila(.clk(clk), .probe0(lmk_data_dbg), .probe1(lmk_clk_dbg), .probe2(lmk_le_dbg),
      .probe3(LMKclk_P));
     
     always @(posedge clk) begin
+    
+    dumbclk <= dumbclk + 1;
     
     if (LMKclk_N) begin
        if (led_count2 == led_freq - 1) begin
@@ -102,6 +110,10 @@ module lmk_shift_reg( input clk,
             led_count2 <= led_count2 + 1;
         end
     end
+    
+    //if (LMKclk_P) begin
+      //  lmkled_P <= lmkled_P + 1;
+    //end
     
     if (ce20MHz) begin
         if (led_count == led_freq - 1) begin
@@ -113,17 +125,41 @@ module lmk_shift_reg( input clk,
     end
         
     
+//        if (rst) state <= RESET;
+//        else begin 
+//            case (state)
+//                IDLE: if (load2 != load) state <= CLK_LOW;
+//                CLK_LOW: if (ce20MHz) state <= CLK_HIGH;
+//                CLK_HIGH: if (ce20MHz) begin
+//                    if (bit_count == 31) state <= LATCH_LOW;
+//                    else state <= CLK_LOW;
+//                          end
+//                LATCH_LOW: if (ce20MHz) state <= LATCH_HIGH;
+//                LATCH_HIGH: if (ce20MHz) begin
+//                             load2 <= load;
+//                             state <= IDLE;
+//                             end
+//                RESET: state <= CLK_LOW;
+//            endcase
+//        end
+
+
+
         if (rst) state <= RESET;
         else begin 
             case (state)
-                IDLE: if (load2 != load) state <= CLK_LOW;
+                IDLE: if (load2 != load) state <= LATCH_HIGH;
                 CLK_LOW: if (ce20MHz) state <= CLK_HIGH;
                 CLK_HIGH: if (ce20MHz) begin
                     if (bit_count == 31) state <= LATCH_LOW;
                     else state <= CLK_LOW;
-                end
+                          end
                 LATCH_LOW: if (ce20MHz) state <= LATCH_HIGH;
-                LATCH_HIGH: if (ce20MHz) begin
+                LATCH_HIGH: if (ce20MHz && latch_count == 0) begin
+                            state <= CLK_LOW;
+                            latch_count <= latch_count + 1;
+                            end else if (ce20MHz) begin
+                             latch_count <= latch_count + 1;
                              load2 <= load;
                              state <= IDLE;
                              end
@@ -155,6 +191,14 @@ module lmk_shift_reg( input clk,
     assign LMKDATA = lmk_data;
     assign LMKCLK = lmk_clk;
     assign LMKLE = lmk_le;
+    //assign CLK_SYNC = (state == IDLE);
+    assign CLK_SYNC = sync_vio;
     assign LED[0] = led;
     assign LED[1] = lmkled;
+    assign CLK_PIN = dumbclk;
+    //assign CONN1[0] = 1;
+    //assign CONN1[2] = 1;
+    //assign CONN1[1] = 0;
+    //assign CONN1[3] = 0;
+    //assign LED[2] = lmkled_P;
 endmodule

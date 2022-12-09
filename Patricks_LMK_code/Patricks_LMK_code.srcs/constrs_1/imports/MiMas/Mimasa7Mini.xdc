@@ -108,7 +108,7 @@ set_property -dict { PACKAGE_PIN "R11"   IOSTANDARD LVCMOS33    SLEW FAST} [get_
 #set_property -dict { PACKAGE_PIN "T13"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[4] }];                      # IO_L16N_T2_A15_D31_14         Sch = LED4
 #set_property -dict { PACKAGE_PIN "R12"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[5] }];                      # IO_L15P_T2_DQS_RDWR_B_14      Sch = LED5
 #set_property -dict { PACKAGE_PIN "T12"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[6] }];                      # IO_L15N_T2_DQS_DOUT_CSO_B_14  Sch = LED6
-#set_property -dict { PACKAGE_PIN "R11"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[7] }];                      # IO_L17N_T2_A13_D29_14         Sch = LED7
+#set_property -dict { PACKAGE_PIN "R11"   IOSTANDARD LVCMOS33    SLEW FAST} [get_ports { LED[2] }];                      # IO_L17N_T2_A13_D29_14         Sch = LED7
 
 #####################################################################################################################
 ##                                               RGB LED                                                            #
@@ -165,18 +165,18 @@ set_property -dict { PACKAGE_PIN "R11"   IOSTANDARD LVCMOS33    SLEW FAST} [get_
 ## Im changing from patricks xdc because the pinouts I dont believe math because he did this with
 ## Version 2 not Mimas Version 4. I also changed LVCMOS25 to LVCMOS33, since the Mimas thinks
 # its doing 3.3V but I changed a resistor on it to do 2.5V
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "C16" } [get_ports {    LMKDATA     }]
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "B16" } [get_ports {    LMKLE       }]
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A15" } [get_ports {    LMKCLK      }]
-set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "K15" } [get_ports {    LMKOE       }]
+set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A8" } [get_ports {    LMKDATA     }]
+set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A9" } [get_ports {    LMKLE       }]
+set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "L5" } [get_ports {    LMKCLK      }]
+#set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "K15" } [get_ports {    LMKOE       }]
 set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "D10" } [get_ports {    CLK_SYNC    }]
 
-#set_property -dict  { PACKAGE_PIN "D15"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[0]}];                        # IO_L15N_T2_DQS_ADV_B_15       Sch = GPIO_19_N
+set_property -dict  { PACKAGE_PIN "D15"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {CLK_PIN}];                        # IO_L15N_T2_DQS_ADV_B_15       Sch = GPIO_19_N
 #set_property -dict  { PACKAGE_PIN "D14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[1]}];                        # IO_L15P_T2_DQS_15             Sch = GPIO_19_P
 #set_property -dict  { PACKAGE_PIN "B14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[2]}];                        # IO_L8N_T1_AD10N_15            Sch = GPIO_20_N
 #set_property -dict  { PACKAGE_PIN "C14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[3]}];                        # IO_L8P_T1_AD10P_15            Sch = GPIO_20_P
-set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_N}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
-set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_P}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P
+set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_P}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
+set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_N}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P
 #set_property -dict  { PACKAGE_PIN "C12"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[6]}];                        # IO_L11N_T1_SRCC_15            Sch = GPIO_22_N
 #set_property -dict  { PACKAGE_PIN "C11"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[7]}];                        # IO_L11P_T1_SRCC_15            Sch = GPIO_22_P
 #set_property -dict  { PACKAGE_PIN "G16"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[8]}];                        # IO_L22N_T3_A16_15             Sch = GPIO_23_N
@@ -228,8 +228,8 @@ set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS25   SLEW FAST } [get
 #set_property -dict  { PACKAGE_PIN "P13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[1]}];                     # IO_L11N_T1_SRCC_14            Sch = CONN1_D1
 #set_property -dict  { PACKAGE_PIN "L13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[2]}];                     # IO_L5N_T0_D07_14              Sch = CONN1_D2
 #set_property -dict  { PACKAGE_PIN "M12"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[3]}];                     # IO_L6N_T0_D08_VREF_14         Sch = CONN1_D3
-#set_property -dict  { PACKAGE_PIN "N9"    IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[4]}];                     # IO_L18P_T2_A12_D28_14         Sch = CONN1_D4
-#set_property -dict  { PACKAGE_PIN "P9"    IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[5]}];                     # IO_L18N_T2_A11_D27_14         Sch = CONN1_D5
+#set_property -dict  { PACKAGE_PIN "N9"    IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[2]}];                     # IO_L18P_T2_A12_D28_14         Sch = CONN1_D4
+#set_property -dict  { PACKAGE_PIN "P9"    IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[3]}];                     # IO_L18N_T2_A11_D27_14         Sch = CONN1_D5
 #set_property -dict  { PACKAGE_PIN "P8"    IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[6]}];                     # IO_L20P_T3_A08_D24_14         Sch = CONN1_D6
 #set_property -dict  { PACKAGE_PIN "R8"    IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {CONN1[7]}];                     # IO_L20N_T3_A07_D23_14         Sch = CONN1_D7
 

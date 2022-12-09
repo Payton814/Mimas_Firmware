@@ -265,6 +265,22 @@
                                         "isBus": false
                                     }
                                 ]
+                            },
+                            {
+                                "name": "probe_out3",
+                                "id": 8,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "CLK_SYNC_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -278,10 +294,6 @@
                                 "name": "FSM_onehot_state_reg[0]",
                                 "states": [
                                     {
-                                        "name": "IDLE",
-                                        "val": "000001"
-                                    },
-                                    {
                                         "name": "CLK_HIGH",
                                         "val": "100000"
                                     },
@@ -294,12 +306,16 @@
                                         "val": "000010"
                                     },
                                     {
-                                        "name": "CLK_LOW",
-                                        "val": "000100"
-                                    },
-                                    {
                                         "name": "LATCH_LOW",
                                         "val": "010000"
+                                    },
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000001"
+                                    },
+                                    {
+                                        "name": "CLK_LOW",
+                                        "val": "000100"
                                     }
                                 ]
                             }
