@@ -11,3 +11,9 @@ The correct code to use to use the chip is [Patricks_LMK_Code](https://github.co
 
 So the LMK chip in the most simplistic understanding is a clock divider. You give it some clock and it outputs a differential clock, whos frequency is determined by the user. The following picture shows this basic usage.
 ![LMK basic schematic](https://user-images.githubusercontent.com/90419779/210421809-f313d07e-a6e6-4314-b397-a61857abc45d.png)
+
+In reality, the chip is not that simple, and for firmware purposes you actually have to know the more complicated picture. But the above is the very basic and simplistic goal.
+
+![LMK_Functional_Diagram](https://user-images.githubusercontent.com/90419779/210427379-29b2d2a3-8dbd-42f5-a3bd-2143247aec51.png)
+
+From the functional block diagram you see that the way the chip works is there are 2 different clock inputs. Through the firmware you can choose which one to use. However, for simplicity the firmware just uses one of them where the input clock comes from the onboard oscillator on MiMas.
