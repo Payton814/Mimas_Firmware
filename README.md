@@ -9,4 +9,5 @@ The correct code to use to use the chip is [Patricks_LMK_Code](https://github.co
 
 ## Overview of the LMK01010 chip
 
-So the LMK chip in the most simplistic understanding is a clock divider. You give it some clock and it outputs a differential clock, whos frequency is determined by the user. 
+So the LMK chip in the most simplistic understanding is a clock divider. You give it some clock and it outputs a differential clock, whos frequency is determined by the user. The following picture shows this basic usage.
+![LMK basic schematic](https://user-images.githubusercontent.com/90419779/210421809-f313d07e-a6e6-4314-b397-a61857abc45d.png)
