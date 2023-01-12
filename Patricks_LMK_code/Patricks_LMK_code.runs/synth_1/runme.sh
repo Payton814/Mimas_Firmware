@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Q:/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.runs/synth_1'
+HD_PWD='C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

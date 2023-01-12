@@ -162,21 +162,20 @@ set_property -dict { PACKAGE_PIN "R11"   IOSTANDARD LVCMOS33    SLEW FAST} [get_
 ####################################################################################################################
 
 ## LMK
-## Im changing from patricks xdc because the pinouts I dont believe math because he did this with
-## Version 2 not Mimas Version 4. I also changed LVCMOS25 to LVCMOS33, since the Mimas thinks
-# its doing 3.3V but I changed a resistor on it to do 2.5V
+## Im changing from patricks xdc because the pinouts I dont believe match because he did this with
+## Version 2 not Mimas Version 4.
 set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A8" } [get_ports {    LMKDATA     }]
 set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "A9" } [get_ports {    LMKLE       }]
 set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "L5" } [get_ports {    LMKCLK      }]
 #set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "K15" } [get_ports {    LMKOE       }]
 set_property -dict { IOSTANDARD LVCMOS25 PACKAGE_PIN "D10" } [get_ports {    CLK_SYNC    }]
 
-set_property -dict  { PACKAGE_PIN "D15"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {CLK_PIN}];                        # IO_L15N_T2_DQS_ADV_B_15       Sch = GPIO_19_N
+set_property -dict  { PACKAGE_PIN "D15"   IOSTANDARD LVCMOS25} [get_ports {CLK_PIN}];                        # IO_L15N_T2_DQS_ADV_B_15       Sch = GPIO_19_N
 #set_property -dict  { PACKAGE_PIN "D14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[1]}];                        # IO_L15P_T2_DQS_15             Sch = GPIO_19_P
 #set_property -dict  { PACKAGE_PIN "B14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[2]}];                        # IO_L8N_T1_AD10N_15            Sch = GPIO_20_N
 #set_property -dict  { PACKAGE_PIN "C14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[3]}];                        # IO_L8P_T1_AD10P_15            Sch = GPIO_20_P
-set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_P}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
-set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVCMOS25   SLEW FAST } [get_ports {LMKclk_N}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P
+set_property -dict  { PACKAGE_PIN "C13"   IOSTANDARD LVDS_25 DIFF_TERM TRUE } [get_ports {LMKclk_N}];                        # IO_L12N_T1_MRCC_15            Sch = GPIO_21_N
+set_property -dict  { PACKAGE_PIN "D13"   IOSTANDARD LVDS_25 DIFF_TERM TRUE } [get_ports {LMKclk_P}];                        # IO_L12P_T1_MRCC_15            Sch = GPIO_21_P
 #set_property -dict  { PACKAGE_PIN "C12"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[6]}];                        # IO_L11N_T1_SRCC_15            Sch = GPIO_22_N
 #set_property -dict  { PACKAGE_PIN "C11"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[7]}];                        # IO_L11P_T1_SRCC_15            Sch = GPIO_22_P
 #set_property -dict  { PACKAGE_PIN "G16"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {P5[8]}];                        # IO_L22N_T3_A16_15             Sch = GPIO_23_N

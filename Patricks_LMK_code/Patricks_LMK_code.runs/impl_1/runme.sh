@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Q:/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.runs/impl_1'
+HD_PWD='C:/Users/Payton/Vivado_Projects/Artix_7_MiMas_A7/Mimas_Firmware/Patricks_LMK_code/Patricks_LMK_code.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log lmk_shift_reg.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source lmk_shift_reg.tcl -notrace
 
 

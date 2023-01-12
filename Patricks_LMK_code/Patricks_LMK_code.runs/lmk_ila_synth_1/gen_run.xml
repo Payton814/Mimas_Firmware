@@ -9,7 +9,7 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/lmk_ila">
     <File Path="$PSRCDIR/sources_1/ip/lmk_ila/lmk_ila.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/Payton/Desktop/Research/Beatty_Lab/Frimware/firmware-pueo-turfio-master/firmware-pueo-turfio-master/ip/debug/lmk_ila/lmk_ila.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/Research/Beatty_Lab/Frimware/firmware-pueo-turfio-master/firmware-pueo-turfio-master/ip/debug/lmk_ila/lmk_ila.xci"/>
         <Attr Name="ImportTime" Val="1668100268"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -24,7 +24,7 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/lmk_ila">
     <File Path="$PSRCDIR/sources_1/ip/lmk_ila/lmk_ila.xci">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/Payton/Desktop/Research/Beatty_Lab/Frimware/firmware-pueo-turfio-master/firmware-pueo-turfio-master/ip/debug/lmk_ila/lmk_ila.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/Research/Beatty_Lab/Frimware/firmware-pueo-turfio-master/firmware-pueo-turfio-master/ip/debug/lmk_ila/lmk_ila.xci"/>
         <Attr Name="ImportTime" Val="1668100268"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

@@ -45,18 +45,36 @@ module lmk_shift_reg( input clk,
     // At reset, we automatically load this into the LMK so that it restores our input
     // clock in case software blows some crap up or something.
     parameter [31:0] RESET_DEFAULT = 32'h80000000;
+    parameter [31:0] R14_PROGRAM = 32'h4800000E;
     localparam led_freq = 60000000;
     reg [25:0] led_count = 0;
     reg [25:0] led_count2 = 0;
     wire ce20MHz;
     reg led = 0;
     reg go = 0;
+    reg sync_pin = 0;
     reg dumbclk = 0;
     wire [31:0] din;
     reg lmkled = 0;
     reg lmkled_P = 0;
     clk_div_ce #(.CLK_DIVIDE(4), .EXTRA_DIV2("FALSE")) clk_div_ce(.clk(clk),.ce(ce20MHz));
     reg load2 = 0;
+    reg reset_count = 0;
+    wire LMK_IBUFDS_clk;
+    
+    
+    
+    IBUFDS #(
+        .CAPACITANCE("DONT_CARE"),
+        .DIFF_TERM("FALSE"),
+        .IBUF_DELAY_VALUE("0"),
+        .IFD_DELAY_VALUE("AUTO"),
+        .IOSTANDARD("DEFAULT")) IBUFDS_inst (
+                                                .O(LMK_IBUFDS_clk),
+                                                .I(LMKclk_P),
+                                                .IB(LMKclk_N)
+                                            );
+    
 
     
     // nominally run off initclk, which is 40 MHz.
@@ -96,13 +114,13 @@ module lmk_shift_reg( input clk,
          .probe_out2(load), .probe_out3(sync_vio));
          
     lmk_ila ila(.clk(clk), .probe0(lmk_data_dbg), .probe1(lmk_clk_dbg), .probe2(lmk_le_dbg),
-     .probe3(LMKclk_P));
+     .probe3(LMK_IBUFDS_clk));
     
     always @(posedge clk) begin
     
     dumbclk <= dumbclk + 1;
     
-    if (LMKclk_N) begin
+    if (LMK_IBUFDS_clk) begin
        if (led_count2 == led_freq - 1) begin
             led_count2 <= 0;
             lmkled <= lmkled + 1;
@@ -145,10 +163,18 @@ module lmk_shift_reg( input clk,
 
 
 
-        if (rst) state <= RESET;
-        else begin 
+        if (rst) begin
+             state <= RESET;
+             reset_count <= 1;
+        end else begin 
             case (state)
-                IDLE: if (load2 != load) state <= LATCH_HIGH;
+                IDLE: if (load2 != load) begin
+                        state <= LATCH_HIGH;
+                      end else if (reset_count == 1) begin
+                        din_reg <= R14_PROGRAM;
+                        state <= LATCH_HIGH;
+                        reset_count <= 0;
+                      end
                 CLK_LOW: if (ce20MHz) state <= CLK_HIGH;
                 CLK_HIGH: if (ce20MHz) begin
                     if (bit_count == 31) state <= LATCH_LOW;
@@ -163,12 +189,18 @@ module lmk_shift_reg( input clk,
                              load2 <= load;
                              state <= IDLE;
                              end
-                RESET: state <= CLK_LOW;
+                RESET: state <= LATCH_HIGH;
             endcase
         end
         
         if (state == IDLE || state == RESET) bit_count <= {5{1'b0}};
         else if (state == CLK_HIGH && ce20MHz) bit_count <= bit_count + 1;
+        
+        if (state == IDLE) begin
+            sync_pin <= 1;
+        end else begin
+            sync_pin <= 0;
+        end
         
         if (rst) din_reg <= RESET_DEFAULT;
         else if (state == IDLE && load) din_reg <= din;
@@ -192,7 +224,7 @@ module lmk_shift_reg( input clk,
     assign LMKCLK = lmk_clk;
     assign LMKLE = lmk_le;
     //assign CLK_SYNC = (state == IDLE);
-    assign CLK_SYNC = sync_vio;
+    assign CLK_SYNC = sync_pin;
     assign LED[0] = led;
     assign LED[1] = lmkled;
     assign CLK_PIN = dumbclk;
